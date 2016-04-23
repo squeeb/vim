@@ -5,6 +5,9 @@ execute pathogen#infect()
 set backupdir=~/.vim-tmp,/tmp
 set directory=~/.vim-tmp,/tmp
 
+" Mappings
+let mapleader=","               " use , as leader instead of backslash
+
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
 set showcmd                     " display incomplete commands
@@ -44,8 +47,8 @@ set winwidth=84                 "
 set colorcolumn=80              " highlight at 80 characters
 
 " Tabs
-nmap <c-]> :tabn<cr>
-nmap <c-[> :tabp<cr>
+nmap <leader>[ :tabp<cr>
+nmap <leader>] :tabn<cr>
 nmap T :tabnew<cr>
 
 " navigate buffers
@@ -61,4 +64,9 @@ nnoremap <CR> :nohlsearch<cr>
 " Retain indent when pasting code
 nnoremap <leader>pt :set invpaste paste?<CR>
 set pastetoggle=<leader>pt
+
 set showmode
+
+" NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+map <leader>N :NERDTreeToggle<CR>
