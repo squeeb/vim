@@ -1,4 +1,5 @@
 setlocal tabstop=4
+setlocal shiftwidth=4
 setlocal noexpandtab
 setlocal nolist
 au FileType go nmap <leader>r <Plug>(go-run)
