@@ -6,7 +6,7 @@ set backupdir=~/.vim-tmp,/tmp
 set directory=~/.vim-tmp,/tmp
 
 " Mappings
-let mapleader=","               " use , as leader instead of backslash
+" let mapleader=","             " use , as leader instead of backslash
 
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
@@ -74,5 +74,6 @@ map <leader>N :NERDTreeToggle<CR>
 set wildmenu
 set wildmode=longest,list
 
+" Highlight colors
 hi NoneText ctermbg=NONE cterm=NONE ctermfg=6
 hi SpecialKey ctermbg=NONE cterm=NONE ctermfg=6
