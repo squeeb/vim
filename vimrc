@@ -13,6 +13,7 @@ set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set number
+set t_Co=256
 
 "" Whitespace
 set nowrap                      " don't wrap lines
@@ -29,13 +30,11 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Theme
 syntax enable
-set background=dark
 colorscheme solarized
+set background=dark
 set cursorline                  " highlight current line
 set list                        " turn on invisible characters
 set listchars=tab:▸\ ,trail:▝   " which characters to highlight
-highlight NonText guifg=#FFFFFF
-highlight SpecialKey guifg=#444444
 
 "" vim-airline
 let g:airline_powerline_fonts = 1
@@ -70,3 +69,10 @@ set showmode
 " NERDTree
 " autocmd StdinReadPre * let s:std_in=1
 map <leader>N :NERDTreeToggle<CR>
+
+" tab autocomplete
+set wildmenu
+set wildmode=longest,list
+
+hi NoneText ctermbg=NONE cterm=NONE ctermfg=6
+hi SpecialKey ctermbg=NONE cterm=NONE ctermfg=6
