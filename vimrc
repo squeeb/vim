@@ -6,7 +6,7 @@ set backupdir=~/.vim-tmp,/tmp
 set directory=~/.vim-tmp,/tmp
 
 " Mappings
-" let mapleader=","             " use , as leader instead of backslash
+let mapleader=","             " use , as leader instead of backslash
 
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
@@ -27,11 +27,15 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-
 "" Theme
 syntax enable
 colorscheme solarized
-set background=dark
+let hour = strftime("%H") " Set the background light from 7am to 7pm
+if 7 <= hour && hour < 19
+  set background=light
+else " Set to dark from 7pm to 7am
+  set background=dark
+endif
 set cursorline                  " highlight current line
 set list                        " turn on invisible characters
 set listchars=tab:▸\ ,trail:▝   " which characters to highlight
@@ -53,6 +57,7 @@ nmap T :tabnew<cr>
 " navigate buffers
 nmap <C-n> :bnext<CR>
 nmap <C-b> :bprev<CR>
+nmap <C-q> :Bclose<CR>
 
 " remove whitespace
 map <leader>s :%s/\s\+$//<CR>
