@@ -1,11 +1,11 @@
-"" Pathogen
+" Pathogen
 execute pathogen#infect()
 
 " Store temporary files in a central spot
 set backupdir=~/.vim-tmp,/tmp
 set directory=~/.vim-tmp,/tmp
 
-" Mappings
+" mappings
 let mapleader=","             " use , as leader instead of backslash
 
 set nocompatible                " choose no compatibility with legacy vi
@@ -15,41 +15,45 @@ filetype plugin indent on       " load file type plugins + indentation
 set number
 set t_Co=256
 
-"" Whitespace
+" whitespace
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set scrolloff=999               " Keep the cursor in the middle of the screen
 
-"" Searching
+" searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-"" Theme
+
+" theme
 syntax enable
 colorscheme solarized
+set cursorline                  " highlight current line
+set list                        " turn on invisible characters
+set listchars=tab:▸\ ,trail:▝   " which characters to highlight
+
+"" set theme based on time
 let hour = strftime("%H") " Set the background light from 7am to 7pm
 if 7 <= hour && hour < 19
   set background=light
 else " Set to dark from 7pm to 7am
   set background=dark
 endif
-set cursorline                  " highlight current line
-set list                        " turn on invisible characters
-set listchars=tab:▸\ ,trail:▝   " which characters to highlight
 
-"" vim-airline
+" vim-airline
 let g:airline_powerline_fonts = 1
 
-"" Window
+" window
 set laststatus=2                " always show status line
 set showtabline=2               " always show tab bar
 set winwidth=84                 "
 set colorcolumn=80              " highlight at 80 characters
+set mouse=a
 
-" Tabs
+" tabs
 nmap <leader>[ :tabp<cr>
 nmap <leader>] :tabn<cr>
 nmap T :tabnew<cr>
@@ -57,7 +61,7 @@ nmap T :tabnew<cr>
 " navigate buffers
 nmap <C-n> :bnext<CR>
 nmap <C-b> :bprev<CR>
-nmap <C-q> :Bclose<CR>
+nmap <C-q> :BW<CR>
 
 " remove whitespace
 map <leader>s :%s/\s\+$//<CR>
@@ -65,7 +69,7 @@ map <leader>s :%s/\s\+$//<CR>
 " clear the search buffer
 nnoremap <CR> :nohlsearch<cr>
 
-" Retain indent when pasting code
+" retain indent when pasting code
 nnoremap <leader>pt :set invpaste paste?<CR>
 set pastetoggle=<leader>pt
 
@@ -79,6 +83,9 @@ map <leader>N :NERDTreeToggle<CR>
 set wildmenu
 set wildmode=longest,list
 
-" Highlight colors
+" highlight colors
 hi NoneText ctermbg=NONE cterm=NONE ctermfg=6
 hi SpecialKey ctermbg=NONE cterm=NONE ctermfg=6
+
+" puppet plugin options
+let g:puppet_align_hashes = 0
