@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-bufkill"]
 	path = vim/bundle/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
