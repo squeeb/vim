@@ -6,7 +6,7 @@ set backupdir=~/.vim-tmp,/tmp
 set directory=~/.vim-tmp,/tmp
 
 " mappings
-let mapleader=","             " use , as leader instead of backslash
+let mapleader = "\<Space>"      " space bar to leader key (it's big)
 
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
