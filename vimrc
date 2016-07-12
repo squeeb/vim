@@ -6,7 +6,7 @@ set backupdir=~/.vim-tmp,/tmp
 set directory=~/.vim-tmp,/tmp
 
 " mappings
-let mapleader = "\<Space>"      " space bar to leader key (it's big)
+let mapleader="\\"
 
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
@@ -36,8 +36,8 @@ set list                        " turn on invisible characters
 set listchars=tab:▸\ ,trail:▝   " which characters to highlight
 
 "" set theme based on time
-let hour = strftime("%H") " Set the background light from 7am to 7pm
-if 7 <= hour && hour < 19
+let colorflag = system("cat /tmp/terminalcolor")
+if colorflag == 1
   set background=light
 else " Set to dark from 7pm to 7am
   set background=dark
@@ -61,7 +61,7 @@ nmap T :tabnew<cr>
 " navigate buffers
 nmap <C-n> :bnext<CR>
 nmap <C-b> :bprev<CR>
-nmap <C-q> :BW<CR>
+nmap <leader>q :BW<CR>
 
 " remove whitespace
 map <leader>s :%s/\s\+$//<CR>
