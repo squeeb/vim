@@ -32,6 +32,7 @@ set smartcase                   " ... unless they contain at least one capital l
 syntax enable
 colorscheme solarized
 set cursorline                  " highlight current line
+set cursorcolumn
 set list                        " turn on invisible characters
 set listchars=tab:▸\ ,trail:▝   " which characters to highlight
 
