@@ -20,7 +20,6 @@ set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
-set scrolloff=999               " Keep the cursor in the middle of the screen
 
 " searching
 set hlsearch                    " highlight matches
@@ -89,4 +88,8 @@ hi NoneText ctermbg=NONE cterm=NONE ctermfg=6
 hi SpecialKey ctermbg=NONE cterm=NONE ctermfg=6
 
 " puppet plugin options
-let g:puppet_align_hashes = 0
+let g:puppet_align_hashes = 1
+
+" increment next/previous number
+nnoremap + <C-a>
+nnoremap - <C-x>
