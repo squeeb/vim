@@ -93,3 +93,6 @@ let g:puppet_align_hashes = 1
 " increment next/previous number
 nnoremap + <C-a>
 nnoremap - <C-x>
+
+" run buffer in python
+nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>
