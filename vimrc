@@ -96,3 +96,5 @@ nnoremap - <C-x>
 
 " run buffer in python
 nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>
+
+" jedi unfuck
