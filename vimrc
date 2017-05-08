@@ -30,7 +30,7 @@ set smartcase                   " ... unless they contain at least one capital l
 " theme
 syntax enable
 colorscheme solarized
-set cursorline                  " highlight current line
+" set cursorline                  " highlight current line
 set cursorcolumn
 set list                        " turn on invisible characters
 set listchars=tab:▸\ ,trail:▝   " which characters to highlight
