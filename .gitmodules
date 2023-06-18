@@ -43,3 +43,9 @@
 [submodule "vim/bundle/Vim-Jinja2-Syntax"]
 	path = vim/bundle/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "vim/bundle/promptline.vim"]
+	path = vim/bundle/promptline.vim
+	url = https://github.com/edkolev/promptline.vim
+[submodule "vim/bundle/cisco.vim"]
+	path = vim/bundle/cisco.vim
+	url = https://github.com/momota/cisco.vim
