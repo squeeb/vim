@@ -49,3 +49,6 @@
 [submodule "vim/bundle/cisco.vim"]
 	path = vim/bundle/cisco.vim
 	url = https://github.com/momota/cisco.vim
+[submodule "vim/bundle/copilot.vim"]
+	path = vim/bundle/copilot.vim
+	url = https://github.com/github/copilot.vim.git
