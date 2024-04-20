@@ -1,6 +1,6 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
@@ -18,16 +18,16 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/vim-puppet"]
 	path = vim/bundle/vim-puppet
-	url = git://github.com/rodjek/vim-puppet.git
+	url = https://github.com/rodjek/vim-puppet.git
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/vim-bufkill"]
 	path = vim/bundle/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill
@@ -39,16 +39,10 @@
 	url = https://github.com/ekalinin/Dockerfile.vim.git
 [submodule "vim/bundle/vim-commentary"]
 	path = vim/bundle/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
-[submodule "vim/bundle/Vim-Jinja2-Syntax"]
-	path = vim/bundle/Vim-Jinja2-Syntax
-	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/bundle/promptline.vim"]
 	path = vim/bundle/promptline.vim
 	url = https://github.com/edkolev/promptline.vim
 [submodule "vim/bundle/cisco.vim"]
 	path = vim/bundle/cisco.vim
 	url = https://github.com/momota/cisco.vim
-[submodule "vim/bundle/copilot.vim"]
-	path = vim/bundle/copilot.vim
-	url = https://github.com/github/copilot.vim.git
