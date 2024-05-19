@@ -151,3 +151,4 @@ let g:solarized_contrast  =   "high"
 let g:solarized_visibility=   "high"
 " let g:jedi#rename_command = "<leader>rn"
 colorscheme solarized
+let g:indentLine_char     =   '│'
