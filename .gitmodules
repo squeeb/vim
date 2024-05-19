@@ -46,3 +46,6 @@
 [submodule "vim/bundle/cisco.vim"]
 	path = vim/bundle/cisco.vim
 	url = https://github.com/momota/cisco.vim
+[submodule "vim/bundle/vim-plist"]
+	path = vim/bundle/vim-plist
+	url = https://github.com/darfink/vim-plist.git
