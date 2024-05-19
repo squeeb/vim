@@ -157,3 +157,5 @@ colorscheme solarized
 let g:indentLine_char     =   '│'
 
 set ruler
+
+let g:python_pep8_indent_hang_closing = 1
