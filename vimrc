@@ -126,7 +126,7 @@ nnoremap + <C-a>
 nnoremap - <C-x>
 
 " run buffer in python
-nnoremap <buffer> <leader>r :exec '!clear;python3' shellescape(@%, 1)<cr>
+nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>
 
 " some useful Ruby filetype settings
 augroup RubyShenanigans
