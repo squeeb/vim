@@ -38,6 +38,9 @@ set cursorcolumn
 set list                        " turn on invisible characters
 set listchars=tab:▸\ ,trail:•   " which characters to highlight
 
+" fuck concealing
+set conceallevel=0
+
 nmap <leader>l :call ToggleList()<cr>
 
 function! ToggleList()
