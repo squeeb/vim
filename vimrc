@@ -159,3 +159,16 @@ let g:indentLine_char     =   '│'
 set ruler
 
 let g:python_pep8_indent_hang_closing = 1
+
+" Align INI-style key=value pairs
+function! AlignINI() range
+  " find the longest key length in the selected lines
+  let maxlen = max(map(getline(a:firstline, a:lastline),
+        \ {_, v -> strlen(matchstr(v, '^[^=]*'))}))
+
+  " align each line
+  execute a:firstline . ',' . a:lastline . 's/^\([^=]*\)=\(.*\)/\=printf("%-*s = %s", maxlen, trim(submatch(1)), trim(submatch(2)))/'
+endfunction
+
+" Map \a to align selected lines
+xnoremap <leader>a :call AlignINI()<CR>
