@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-jinja2-syntax.vim"]
 	path = vim/bundle/vim-jinja2-syntax.vim
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "vim/bundle/vim-gcode"]
+	path = vim/bundle/vim-gcode
+	url = https://github.com/wilriker/gcode.vim
