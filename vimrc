@@ -31,8 +31,6 @@ let g:solarized_visibility = "high"
 " puppet
 let g:puppet_align_hashes = 1
 
-" python
-let g:python_pep8_indent_hang_closing = 1
 
 " disable JSON concealing
 let g:vim_json_conceal = 0
@@ -136,9 +134,6 @@ map <leader>rq :%s/\"\([^"]*\)\"/'\1'/g<CR>
 " align INI-style key=value pairs
 xnoremap <leader>a :call AlignINI()<CR>
 
-" run buffer in python
-nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>
-
 " ============================================================================
 " TAB NAVIGATION
 " ============================================================================
@@ -168,15 +163,6 @@ nnoremap - <C-x>
 
 hi NoneText ctermbg=NONE cterm=NONE ctermfg=6
 hi SpecialKey ctermbg=NONE cterm=NONE ctermfg=6
-
-" ============================================================================
-" FILETYPE SPECIFIC
-" ============================================================================
-
-augroup RubyShenanigans
-  au!
-  autocmd BufRead,BufNewFile Gemfile,Rakefile,Capfile,Vagrantfile set filetype=ruby
-augroup END
 
 " ============================================================================
 " FUNCTIONS
