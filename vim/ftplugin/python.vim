@@ -3,7 +3,7 @@ setlocal shiftwidth=4
 setlocal softtabstop=4
 setlocal formatoptions=crnqj
 
-let g:python_pep8_indent_hang_closing = 1
+let g:python_pep8_indent_hang_closing = 0
 
 " run buffer in python
 nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>

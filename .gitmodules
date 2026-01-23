@@ -61,3 +61,6 @@
 [submodule "vim/bundle/vim-gcode"]
 	path = vim/bundle/vim-gcode
 	url = https://github.com/wilriker/gcode.vim
+[submodule "vim/bundle/vim-yaml-folds"]
+	path = vim/bundle/vim-yaml-folds
+	url = https://github.com/pedrohdz/vim-yaml-folds.git
