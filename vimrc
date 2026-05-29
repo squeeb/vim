@@ -14,7 +14,6 @@ filetype plugin indent on
 let g:airline_powerline_fonts = 1
 
 " NERDTree
-let NERDTreeWinSize = 1
 map <leader>N :NERDTreeToggle<CR>
 " let g:Tlist_WinWidth=60
 let NERDTreeWinSize = 31
