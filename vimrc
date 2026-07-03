@@ -1,4 +1,12 @@
 " ============================================================================
+" PLUGIN MANAGEMENT
+" ============================================================================
+
+" Pathogen
+execute pathogen#infect()
+filetype plugin indent on
+
+" ============================================================================
 " PLUGIN CONFIGURATION
 " ============================================================================
 
@@ -30,18 +38,11 @@ let g:puppet_align_hashes = 1
 " disable JSON concealing
 let g:vim_json_conceal = 0
 
-" polyglot:python
+" python
 " https://github.com/vim-python/python-syntax
 let g:python_highlight_all = 1
-
-"
-" ============================================================================
-" PLUGIN MANAGEMENT
-" ============================================================================
-
-" Pathogen
-execute pathogen#infect()
-filetype plugin indent on
+let g:python_pep8_indent_multiline_string = 1
+let g:python_pep8_indent_hang_closing = 1
 
 " ============================================================================
 " BASIC SETTINGS

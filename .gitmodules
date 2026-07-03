@@ -40,9 +40,6 @@
 [submodule "vim/bundle/indentLine"]
 	path = vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
-[submodule "vim/bundle/vim-autoclose"]
-	path = vim/bundle/vim-autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "vim/bundle/vim-gcode"]
 	path = vim/bundle/vim-gcode
 	url = https://github.com/wilriker/gcode.vim
