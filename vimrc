@@ -185,6 +185,20 @@ vnoremap <Space> za
 hi NoneText ctermbg=NONE cterm=NONE ctermfg=6
 hi SpecialKey ctermbg=NONE cterm=NONE ctermfg=6
 
+" ===========================================================================
+" CLIPBOARD
+" ===========================================================================
+
+if executable('wl-copy') && $WAYLAND_DISPLAY != ''
+  " Yank to system clipboard
+  vnoremap <silent> "+y y:call system('wl-copy', @")<CR>
+  nnoremap <silent> "+yy yy:call system('wl-copy', @")<CR>
+
+  " Paste from system clipboard
+  nnoremap <silent> "+p :call setreg('"', system('wl-paste --no-newline'))<CR>p
+  nnoremap <silent> "+P :call setreg('"', system('wl-paste --no-newline'))<CR>P
+endif
+
 " ============================================================================
 " FUNCTIONS
 " ============================================================================
