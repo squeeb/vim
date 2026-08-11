@@ -24,6 +24,7 @@ autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' 
 " indentLine
 let g:indentLine_char = '│'
 let g:indentLine_fileTypeExclude = ['json']
+let g:indentLine_conceallevel = 0
 
 " solarized
 let g:solarized_bold       = 1
