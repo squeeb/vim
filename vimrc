@@ -16,10 +16,19 @@ let g:airline_powerline_fonts = 1
 " NERDTree
 map <leader>N :NERDTreeToggle<CR>
 " let g:Tlist_WinWidth=60
-let NERDTreeWinSize = 31
+let g:NERDTreeWinSize = 31
+
+" Never let CTRL-W= or window-manager resizing touch NERDTree's width
+autocmd FileType nerdtree setlocal winfixwidth
+
+" Re-assert the width every time NERDTree becomes the visible buffer
+" (covers the case where it was resized while hidden, then toggled back)
+autocmd BufWinEnter * if &filetype ==# 'nerdtree' | exe 'vertical resize ' . g:NERDTreeWinSize | endif
+
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
 autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+
 
 " indentLine
 let g:indentLine_char = '│'
@@ -69,10 +78,10 @@ set cursorcolumn
 " set cursorline                " uncomment to highlight current line
 
 " window settings
-set winwidth=84
+"set winwidth=84
 set colorcolumn=80              " highlight at 80 characters
 set mouse=a
-set noea
+"set noea
 
 
 " ============================================================================
