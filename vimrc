@@ -11,7 +11,10 @@ filetype plugin indent on
 " ============================================================================
 
 " vim-airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1                                              " enable powerline fonts
+let g:airline#extensions#tabline#buffer_nr_show = 0                            " don't show buffer number
+let g:airline#extensions#tabline#enabled = 1                                   " enable tabline
+let g:airline#extensions#tabline#buffer_idx_mode = 1                           " show index number on tabline for buffer
 
 " NERDTree
 map <leader>N :NERDTreeToggle<CR>
@@ -82,7 +85,8 @@ set cursorcolumn
 set colorcolumn=80              " highlight at 80 characters
 set mouse=a
 "set noea
-
+set switchbuf=useopen           " don't open in new buffer if there's one open
+set hidden                      " don't ask to save when switching buffers
 
 " ============================================================================
 " INDENTATION & WHITESPACE
@@ -171,7 +175,18 @@ nmap T :tabnew<cr>
 nmap <C-n> :bnext<CR>
 nmap <C-b> :bprev<CR>
 nmap <leader>q :BW<CR>
-
+" probably a better way to switch buffers by index but meh
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
+nmap <leader>- <Plug>AirlineSelectPrevTab
+nmap <leader>+ <Plug>AirlineSelectNextTab
 " ============================================================================
 " NUMBER INCREMENT/DECREMENT
 " ============================================================================
