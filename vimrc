@@ -44,6 +44,7 @@ let g:solarized_underline  = 1
 let g:solarized_italic     = 1
 let g:solarized_contrast   = "high"
 let g:solarized_visibility = "high"
+let g:solarized_termtrans  = 1
 
 " puppet
 let g:puppet_align_hashes = 1
