@@ -161,6 +161,9 @@ xnoremap <leader>a :call AlignINI()<CR>
 " insert current date in IEEE format (YYYY-MM-DD)
 nnoremap <leader>d :read !date  +\%Y-\%m-\%d<CR>
 
+" open a terminal horizontally
+nnoremap <leader>t :botright terminal ++rows=15<CR>
+
 " ============================================================================
 " TAB NAVIGATION
 " ============================================================================
@@ -202,7 +205,6 @@ nnoremap - <C-x>
 set nofoldenable
 nnoremap <Space> za
 vnoremap <Space> za
-
 
 " ============================================================================
 " HIGHLIGHTING
