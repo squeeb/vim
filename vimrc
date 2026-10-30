@@ -162,7 +162,7 @@ xnoremap <leader>a :call AlignINI()<CR>
 nnoremap <leader>d :read !date  +\%Y-\%m-\%d<CR>
 
 " open a terminal horizontally
-nnoremap <leader>t :botright terminal ++rows=15<CR>
+nnoremap <leader>t :below terminal ++rows=15<CR>
 
 " ============================================================================
 " TAB NAVIGATION
