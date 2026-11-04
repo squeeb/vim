@@ -32,11 +32,9 @@ autocmd BufWinEnter * if &filetype ==# 'nerdtree' | exe 'vertical resize ' . g:N
 autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
-
 " indentLine
 let g:indentLine_char = '│'
-let g:indentLine_fileTypeExclude = ['json']
-let g:indentLine_conceallevel = 0
+let g:indentLine_fileTypeExclude = ['json', 'markdown']
 
 " solarized
 let g:solarized_bold       = 1
