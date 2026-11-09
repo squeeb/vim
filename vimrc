@@ -1,12 +1,4 @@
 " ============================================================================
-" PLUGIN MANAGEMENT
-" ============================================================================
-
-" Pathogen
-execute pathogen#infect()
-filetype plugin indent on
-
-" ============================================================================
 " PLUGIN CONFIGURATION
 " ============================================================================
 
@@ -55,6 +47,17 @@ let g:vim_json_conceal = 0
 let g:python_highlight_all = 1
 let g:python_pep8_indent_multiline_string = 1
 let g:python_pep8_indent_hang_closing = 1
+
+" polyglot
+let g:polyglot_disabled = ['sleuth']
+
+" ============================================================================
+" PLUGIN MANAGEMENT
+" ============================================================================
+
+" Pathogen
+execute pathogen#infect()
+filetype plugin indent on
 
 " ============================================================================
 " BASIC SETTINGS
